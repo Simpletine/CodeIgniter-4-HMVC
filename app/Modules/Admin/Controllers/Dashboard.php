@@ -18,12 +18,12 @@ class Dashboard extends Controller
     public function index()
 	{
 		$data = [
-		    'title' => 'Dashboard Page',
+		    'title' => 'Dashboard Page Title Here',
             'view' => 'admin/dashboard',
             'data' => $this->userModel->getUsers(),
         ];
 
-		return view('template/layout', $data);
+		return view('template/sample', $data);
 	}
 
 }
