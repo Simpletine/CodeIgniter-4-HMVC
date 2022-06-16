@@ -1,13 +1,26 @@
-<?php namespace App\Modules\Admin\Models;
+<?php
+
+namespace App\Modules\Admin\Models;
 
 class UserModel
 {
-    public function getUsers()
+
+    protected $db;
+    public function connect()
     {
-        return [
-            UserEntity::of('U001', 'User A'),
-            UserEntity::of('U002', 'User B'),
-            UserEntity::of('U003', 'User C'),
-        ];
+        $this->db = db_connect();
+    }
+
+    public function getBlog()
+    {
+        if ($this->db) {
+            echo 'connected';
+            // let we pull the data from the database
+            // for the sql query, we will push to github
+
+            return $this->db->table('blog')->select('title,description')->where('status',1)->get()->getresultarray();
+        } else {
+            echo "isn't connect";
+        }
     }
 }

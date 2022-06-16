@@ -1,4 +1,6 @@
-<?php namespace App\Modules\Admin\Controllers;
+<?php
+
+namespace App\Modules\Admin\Controllers;
 
 use App\Modules\Admin\Models\UserModel;
 use CodeIgniter\Controller;
@@ -12,18 +14,20 @@ class Dashboard extends Controller
      */
     public function __construct()
     {
-        $this->userModel = new UserModel();
+        // here is declare global function
+        // $this->userModel = new UserModel();
     }
 
     public function index()
-	{
-		$data = [
-		    'title' => 'Dashboard Page Title Here',
-            'view' => 'admin/dashboard',
-            'data' => $this->userModel->getUsers(),
-        ];
+    {
+        $data = array();
+        // we include model
+        $model = new UserModel();
+        $model->connect();
+        $data['result'] = $model->getBlog();
+        echo '<pre>'; print_r($data['result']);echo '</pre>';
 
-		return view('template/sample', $data);
-	}
-
+        
+        return view('lesson/howtousemodel', $data);
+    }
 }
