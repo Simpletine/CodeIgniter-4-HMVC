@@ -2,10 +2,8 @@
 // result as an array ,we need to convert to string using foreach
 
 foreach ($result as $key => $value) {
-    echo '<br>';
-    echo 'title->' . ($value['title'] ?? '') . '<br>';
-    echo 'description->' . ($value['description'] ?? '') . '<br>';
-    echo 'status->' . ($value['status'] ?? '') . '<br>';
+    // it's depend, we normally use std class
+    echo anchor('/admin/blog/' . $value->id, ucfirst($value->title)) . '<br/>';
 }
 
 
