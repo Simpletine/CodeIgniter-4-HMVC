@@ -6,13 +6,27 @@ use CodeIgniter\Controller;
 
 class Jumping extends Controller
 {
+<<<<<<< Updated upstream
+=======
+    private $userModel;
+
+    /**
+     * Constructor.
+     */
+>>>>>>> Stashed changes
     public function __construct()
     {
     }
 
+<<<<<<< Updated upstream
     public function index($segmentId = 0)
     {
         // if inside current folder, is more simple as shown
+=======
+    public function index()
+    {
+        // If inside current folder, is more simple as shown
+>>>>>>> Stashed changes
 
         // Direct with class name
         $jumple = new NextJumple();
