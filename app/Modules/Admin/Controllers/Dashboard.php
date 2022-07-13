@@ -38,11 +38,7 @@ class Dashboard extends Controller
 
     public function getResultHere($additionalText = '')
     {
-<<<<<<< Updated upstream
-        $result = 'this is the result from admin modules and the additional text -> '.$additionalText;
-=======
         $result = 'this is the result from admin modules and the additional text -> '. $additionalText;
->>>>>>> Stashed changes
         return $result;
     }
 }

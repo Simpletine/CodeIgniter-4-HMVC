@@ -11,9 +11,4 @@ $routes->group('admin', ['namespace' => 'App\Modules\Admin\Controllers'], functi
     $subroutes->add('dashboard', 'Dashboard::index');
 
     $subroutes->add('blog/(:segment)', 'Dashboard::index/$1');
-<<<<<<< Updated upstream
-
 });
-=======
-});
->>>>>>> Stashed changes
