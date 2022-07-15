@@ -13,6 +13,8 @@ class Jumping extends Controller
      */
     public function __construct()
     {
+        // include form helper if use codeigniter form element
+        helper('form');
     }
 
     public function index()
@@ -27,5 +29,36 @@ class Jumping extends Controller
         $abc['result'] = $resultAdmin->getResultHere('add with this text');
         $abc['result'] .= '<br/> an additional from next jumple' . $jumple->index('add with this text inside jumper');
         return view('samplePage', $abc);
+    }
+
+    public function submitForm($submit = false)
+    {
+        if (!$submit) {
+            return view('submitForm');
+        }
+
+
+        echo 'submit validation running<br/>';
+        $request = \Config\Services::request();
+
+        $first = $request->getPost('first');
+        $second = $request->getPost('second');
+        $third = $request->getPost('third');
+
+        echo $first . '<br/>';
+        echo $second . '<br/>';
+        echo $third . '<br/>';
+
+        if ($first == 'qwerty') {
+            echo 'first row is valid';
+        }
+
+        if ($second == 'asdfg') {
+            echo 'Second row is valid';
+        }
+
+        if ($third == 'zxcvbb') {
+            echo 'third row is valid';
+        }
     }
 }

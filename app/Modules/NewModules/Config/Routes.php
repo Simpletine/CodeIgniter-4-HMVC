@@ -11,3 +11,13 @@ $routes->group('sample', ['namespace' => 'App\Modules\NewModules\Controllers'], 
     $subroutes->add('', 'Jumping::index'); 
 
 });
+
+$routes->group('submit-form', ['namespace' => 'App\Modules\NewModules\Controllers'], function($subroutes){
+
+	// Leave blank for load page
+    $subroutes->add('', 'Jumping::submitForm'); 
+
+    // If receive a validation path, pass the parameter by each slash, exp pass [true]
+    $subroutes->add('validation', 'Jumping::submitForm/true'); 
+
+});
