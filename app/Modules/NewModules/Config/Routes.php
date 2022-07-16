@@ -21,3 +21,9 @@ $routes->group('submit-form', ['namespace' => 'App\Modules\NewModules\Controller
     $subroutes->add('validation', 'Jumping::submitForm/true'); 
 
 });
+
+$routes->group('config', ['namespace' => 'App\Modules\NewModules\Controllers'], function($subroutes){
+ 
+    $subroutes->add('', 'Jumping::loadConfigPage');  
+
+});

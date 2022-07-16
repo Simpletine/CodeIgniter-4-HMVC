@@ -61,4 +61,16 @@ class Jumping extends Controller
             echo 'third row is valid';
         }
     }
+
+    public function loadConfigPage()
+    {
+
+        $result = array();
+
+        $config = config('sampleConfig');
+        $result['first'] = $config->arrayConfig['first'];
+        $result['last'] = $config->arrayConfig['last'];
+        $result['array']=$config->arrayConfig;
+        return view('configViewPage', $result);
+    }
 }
