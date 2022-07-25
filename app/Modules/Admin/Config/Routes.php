@@ -9,6 +9,7 @@ $routes->group('admin', ['namespace' => 'App\Modules\Admin\Controllers'], functi
     /*** Route for Dashboard ***/
     $subroutes->add('', 'Dashboard::index');
     $subroutes->add('dashboard', 'Dashboard::index');
+    $subroutes->add('base', 'Dashboard::testFunction');
 
     $subroutes->add('blog/(:segment)', 'Dashboard::index/$1');
 });

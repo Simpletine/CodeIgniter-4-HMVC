@@ -3,9 +3,9 @@
 namespace App\Modules\Admin\Controllers;
 
 use App\Modules\Admin\Models\UserModel;
-use CodeIgniter\Controller;
+use App\Controllers\BaseController;
 
-class Dashboard extends Controller
+class Dashboard extends BaseController
 {
     private $userModel;
 
@@ -40,5 +40,13 @@ class Dashboard extends Controller
     {
         $result = 'this is the result from admin modules and the additional text -> '. $additionalText;
         return $result;
+    }
+
+    public function testFunction()
+    {
+        echo 'test page before load basecontroller<br/>';
+
+        $addition=$this->firstFunction('an additional pass to basecontroller');
+        echo $addition;
     }
 }
