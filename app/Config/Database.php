@@ -32,9 +32,15 @@ class Database extends \CodeIgniter\Database\Config
 	public $default = [
 		'DSN'      => '',
 		'hostname' => 'localhost',
+<<<<<<< HEAD
 		'username' => 'root',
 		'password' => '',
 		'database' => 'simpletine_youtube',
+=======
+		'username' => '',
+		'password' => '',
+		'database' => '',
+>>>>>>> parent of 1f5a75e (Upload lesson files of basecontroller)
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
