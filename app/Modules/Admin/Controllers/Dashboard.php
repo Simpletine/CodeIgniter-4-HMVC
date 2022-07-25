@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 
 namespace App\Modules\Admin\Controllers;
@@ -7,14 +6,6 @@ use App\Modules\Admin\Models\UserModel;
 use App\Controllers\BaseController;
 
 class Dashboard extends BaseController
-=======
-<?php namespace App\Modules\Admin\Controllers;
-
-use App\Modules\Admin\Models\UserModel;
-use CodeIgniter\Controller;
-
-class Dashboard extends Controller
->>>>>>> parent of 1f5a75e (Upload lesson files of basecontroller)
 {
     private $userModel;
 
@@ -23,7 +14,6 @@ class Dashboard extends Controller
      */
     public function __construct()
     {
-<<<<<<< HEAD
         // here is declare global function
         // $this->userModel = new UserModel();
     }
@@ -59,20 +49,4 @@ class Dashboard extends Controller
         $addition=$this->firstFunction('an additional pass to basecontroller');
         echo $addition;
     }
-=======
-        $this->userModel = new UserModel();
-    }
-
-    public function index()
-	{
-		$data = [
-		    'title' => 'Dashboard Page',
-            'view' => 'admin/dashboard',
-            'data' => $this->userModel->getUsers(),
-        ];
-
-		return view('template/layout', $data);
-	}
-
->>>>>>> parent of 1f5a75e (Upload lesson files of basecontroller)
 }
