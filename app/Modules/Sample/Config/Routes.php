@@ -9,6 +9,7 @@ $routes->group('sample', ['namespace' => 'App\Modules\Sample\Controllers'], func
 
 	/*** Route for Dashboard ***/
     $subroutes->add('', 'Sample::index'); 
+    $subroutes->add('validation', 'Sample::validation'); 
 
 });
  
