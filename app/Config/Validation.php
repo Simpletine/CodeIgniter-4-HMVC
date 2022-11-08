@@ -1,4 +1,6 @@
-<?php namespace Config;
+<?php
+
+namespace Config;
 
 class Validation
 {
@@ -31,6 +33,16 @@ class Validation
 		'single' => 'CodeIgniter\Validation\Views\single',
 	];
 
+	public $sampleValidation = [
+		'sampleInput' => [
+			'label' => 'the sample input value inside validation config',
+			'rules' => 'required|myCustomRules[others]',
+		],
+		'anyInput' => [
+			'label' => 'the any input value inside validation config',
+			'rules' => 'required',
+		],
+	];
 	//--------------------------------------------------------------------
 	// Rules
 	//--------------------------------------------------------------------

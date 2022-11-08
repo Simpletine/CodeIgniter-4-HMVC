@@ -33,15 +33,10 @@ class Sample extends Controller
 
             $Validation = \Config\Services::Validation();
 
-            $rules = [
-                'sampleInput' => [
-                    'label' => 'the sample input value',
-                    'rules' => 'required|myCustomRules[others]',
-                ],
-            ];
+            $rules = config('Validation')->sampleValidation;
             $message = [
-                'sampleInput'=>[
-                    'myCustomRules'=>'The input value is not QWERTY'
+                'sampleInput' => [
+                    'myCustomRules' => 'The input value is not QWERTY'
                 ],
             ];
 
