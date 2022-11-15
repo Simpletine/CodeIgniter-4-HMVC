@@ -16,8 +16,8 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\Validation\Exceptions\ValidationException;
 use CodeIgniter\View\RendererInterface;
 use Config\Validation as ValidationConfig;
-use InvalidArgumentException; 
-use App\libraries\Validation\myCustomRules;
+use InvalidArgumentException;
+use App\Libraries\Validation\myCustomRules;
 
 /**
  * Validator

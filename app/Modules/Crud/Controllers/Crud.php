@@ -2,9 +2,9 @@
 
 namespace App\Modules\Crud\Controllers;
 
-use CodeIgniter\Controller;
+use App\Controllers\BaseController;
 
-class Crud extends Controller
+class Crud extends BaseController
 {
     public function __construct()
     {
