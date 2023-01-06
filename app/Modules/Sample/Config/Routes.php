@@ -12,4 +12,12 @@ $routes->group('sample', ['namespace' => 'App\Modules\Sample\Controllers'], func
     $subroutes->add('validation', 'Sample::validation'); 
 
 });
+
+$routes->group('custom-view', ['namespace' => 'App\Modules\Sample\Controllers'], function($subroutes){
+
+	/*** Route for Dashboard ***/
+    $subroutes->add('', 'Sample::customView');  
+
+});
+ 
  

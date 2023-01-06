@@ -53,4 +53,15 @@ class Sample extends Controller
             }
         }
     }
+
+
+    public function customView()
+    {
+        $layout = config('CustomViews')->groupA;
+
+
+        $outputAddon = view($layout['second']);
+        $group = config('CustomViews')->groupAuto(array('first'), $outputAddon);
+        echo ($group);
+    }
 }
