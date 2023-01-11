@@ -73,4 +73,10 @@ class Sample extends Controller
         $value['first'] = $session->set('first', 'this is the first session value');
         echo view('lesson/session/session-view.tpl', $value);
     }
+
+    public function common()
+    { 
+        echo view('lesson/session/session-view.tpl');
+
+    }
 }

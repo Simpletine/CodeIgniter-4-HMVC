@@ -13,3 +13,10 @@
  *
  * @link: https://codeigniter4.github.io/CodeIgniter4/
  */
+
+
+function firstCommon($somemore = '')
+{
+    echo 'here is first common';
+    echo ' ' . $somemore;
+}
