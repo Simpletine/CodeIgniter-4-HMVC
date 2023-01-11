@@ -13,6 +13,13 @@ $routes->group('sample', ['namespace' => 'App\Modules\Sample\Controllers'], func
 
 });
 
+$routes->group('session', ['namespace' => 'App\Modules\Sample\Controllers'], function($subroutes){
+
+	/*** Route for Dashboard ***/
+    $subroutes->add('', 'Sample::session');  
+
+});
+
 $routes->group('custom-view', ['namespace' => 'App\Modules\Sample\Controllers'], function($subroutes){
 
 	/*** Route for Dashboard ***/
