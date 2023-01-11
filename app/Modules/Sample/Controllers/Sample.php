@@ -60,8 +60,17 @@ class Sample extends Controller
         $layout = config('CustomViews')->groupA;
 
 
+
+
         $outputAddon = view($layout['second']);
         $group = config('CustomViews')->groupAuto(array('first'), $outputAddon);
         echo ($group);
+    }
+
+    public function session()
+    {
+        $session = session();
+        $value['first'] = $session->set('first', 'this is the first session value');
+        echo view('lesson/session/session-view.tpl', $value);
     }
 }
