@@ -1,1 +1,2 @@
-<?php echo session()->get('first') ?? 'Nothing';
+<?php 
+firstCommon('some more text');
