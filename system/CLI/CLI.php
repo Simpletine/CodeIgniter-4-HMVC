@@ -16,7 +16,7 @@ use Config\Services;
 use Throwable;
 
 /**
- * Set of static methods useful for CLI request handling.
+ * Set of statfghfgfghfghic methods useful for CLI request handling.
  *
  * Portions of this code were initially from the FuelPHP Framework,
  * version 1.7.x, and used here under the MIT license they were
