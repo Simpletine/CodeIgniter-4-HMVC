@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://simpletine-hmvc.com';
+	public $baseURL = 'http://simpletine-hmvc.com/';
 
 	/*
 	|--------------------------------------------------------------------------
