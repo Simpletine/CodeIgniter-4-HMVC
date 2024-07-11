@@ -17,12 +17,12 @@ use CodeIgniter\Validation\Exceptions\ValidationException;
 use CodeIgniter\View\RendererInterface;
 use Config\Validation as ValidationConfig;
 use InvalidArgumentException;
-use App\Libraries\Validation\MyRules;
+use App\Libraries\Validation\myCustomRules;
 
 /**
  * Validator
  */
-class Validation extends MyRules implements ValidationInterface 
+class Validation extends myCustomRules implements ValidationInterface 
 {
 	/**
 	 * Files to load with validation functions.

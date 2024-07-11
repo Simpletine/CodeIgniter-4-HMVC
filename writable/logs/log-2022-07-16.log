@@ -1,0 +1,11 @@
+CRITICAL - 2022-07-16 01:01:30 --> Array to string conversion
+#0 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\app\Views\configViewPage.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\wamp64\\www\\S...', 9, Array)
+#1 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\View\View.php(220): include('C:\\wamp64\\www\\S...')
+#2 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\Common.php(1217): CodeIgniter\View\View->render('configViewPage', Array, true)
+#4 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\app\Modules\NewModules\Controllers\Jumping.php(74): view('configViewPage', Array)
+#5 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(936): App\Modules\NewModules\Controllers\Jumping->loadConfigPage()
+#6 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Modules\NewModules\Controllers\Jumping))
+#7 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

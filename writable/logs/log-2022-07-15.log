@@ -1,0 +1,20 @@
+CRITICAL - 2022-07-15 09:37:18 --> Call to undefined function form_open()
+#0 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\View\View.php(220): include()
+#1 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\Common.php(1217): CodeIgniter\View\View->render('submitForm', Array, true)
+#3 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\app\Modules\NewModules\Controllers\Jumping.php(35): view('submitForm')
+#4 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(936): App\Modules\NewModules\Controllers\Jumping->submitForm()
+#5 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Modules\NewModules\Controllers\Jumping))
+#6 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-07-15 09:37:43 --> syntax error, unexpected '}'
+#0 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\S...')
+#1 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Modules\\New...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Modules\\New...')
+#3 [internal function]: spl_autoload_call('App\\Modules\\New...')
+#4 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(893): class_exists('\\App\\Modules\\Ne...', true)
+#5 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

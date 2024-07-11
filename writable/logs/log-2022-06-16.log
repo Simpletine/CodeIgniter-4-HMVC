@@ -1,0 +1,36 @@
+CRITICAL - 2022-06-16 00:09:00 --> Unable to connect to the database.
+#0 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\Database\BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `title`\n...', Array, false)
+#2 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\app\Modules\Admin\Models\UserModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\app\Modules\Admin\Controllers\Dashboard.php(27): App\Modules\Admin\Models\UserModel->getBlog()
+#4 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(936): App\Modules\Admin\Controllers\Dashboard->index()
+#5 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Admin\Controllers\Dashboard))
+#6 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-16 18:26:31 --> Invalid file: lesson/dashboard.php
+#0 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lesson/dashboar...')
+#1 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\Common.php(1217): CodeIgniter\View\View->render('lesson/dashboar...', Array, true)
+#2 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\app\Modules\Admin\Controllers\Dashboard.php(32): view('lesson/dashboar...', Array)
+#3 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(936): App\Modules\Admin\Controllers\Dashboard->index()
+#4 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Admin\Controllers\Dashboard))
+#5 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-16 18:26:47 --> Cannot use object of type stdClass as array
+#0 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\View\View.php(220): include()
+#1 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\Common.php(1217): CodeIgniter\View\View->render('lesson/howtouse...', Array, true)
+#3 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\app\Modules\Admin\Controllers\Dashboard.php(32): view('lesson/howtouse...', Array)
+#4 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(936): App\Modules\Admin\Controllers\Dashboard->index()
+#5 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Admin\Controllers\Dashboard))
+#6 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-16 18:31:47 --> Trying to get property 'title' of non-object
+#0 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\app\Modules\Admin\Controllers\Dashboard.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\wamp64\\www\\S...', 31, Array)
+#1 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(936): App\Modules\Admin\Controllers\Dashboard->index('1')
+#2 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Admin\Controllers\Dashboard))
+#3 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

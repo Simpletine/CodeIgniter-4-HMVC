@@ -1,0 +1,45 @@
+CRITICAL - 2022-07-12 19:00:04 --> Invalid file: samplePage.php
+#0 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('samplePage.php')
+#1 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\Common.php(1217): CodeIgniter\View\View->render('samplePage', Array, true)
+#2 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\app\Modules\NewModules\Controllers\Jumping.php(27): view('samplePage', Array)
+#3 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(936): App\Modules\NewModules\Controllers\Jumping->index()
+#4 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Modules\NewModules\Controllers\Jumping))
+#5 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-07-12 19:06:36 --> syntax error, unexpected '<<' (T_SL)
+#0 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(803): require()
+#1 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-12 19:09:34 --> syntax error, unexpected '<<' (T_SL)
+#0 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(803): require()
+#1 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-12 19:09:35 --> syntax error, unexpected '<<' (T_SL)
+#0 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(803): require()
+#1 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-12 19:09:36 --> syntax error, unexpected '<<' (T_SL)
+#0 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(803): require()
+#1 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-12 19:09:36 --> syntax error, unexpected '<<' (T_SL)
+#0 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(803): require()
+#1 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-07-12 19:09:36 --> syntax error, unexpected '<<' (T_SL)
+#0 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(803): require()
+#1 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\SimpleTine\CodeIgniter4\hmvc\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
