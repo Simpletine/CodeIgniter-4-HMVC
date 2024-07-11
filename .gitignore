@@ -61,6 +61,7 @@ writable/uploads/*
 !writable/uploads/index.html
 
 writable/debugbar/*
+!writable/debugbar/.gitkeep
 
 php_errors.log
 
@@ -83,8 +84,7 @@ phpunit
 #-------------------------
 # Composer
 #-------------------------
-vendor/
-composer.lock
+vendor
 
 #-------------------------
 # IDE / Development Files
@@ -126,27 +126,3 @@ nb-configuration.xml
 /phpunit*.xml
 /.phpunit.*.cache
 
-### Composer ###
-composer.phar
-/vendor/
-
-# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
-
-### PHPUnit ###
-# Covers PHPUnit
-# Reference: https://phpunit.de/
-
-# Generated files
-.phpunit.result.cache
-
-# PHPUnit
-/app/phpunit.xml
-/phpunit.xml
-/tests/_support/*
-
-# Build data
-/build/
-
-# End of https://www.gitignore.io/api/phpunit,composer

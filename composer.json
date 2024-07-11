@@ -1,31 +1,31 @@
 {
-	"name": "mufidjamaluddin/codeigniter4-hmvc",
-	"type": "project",
-	"description": "CodeIgniter4 HMVC starter app",
-	"homepage": "https://codeigniter.com",
-	"license": "MIT",
-	"require": {
-		"php": ">=7.2",
-		"codeigniter4/framework": "^4"
-	},
-	"require-dev": {
-		"mikey179/vfsstream": "1.6.*",
-		"phpunit/phpunit": "8.5.*"
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"Tests\\Support\\": "tests/_support"
-		}
-	},
-	"scripts": {
-		"test": "phpunit",
-		"post-update-cmd": [
-			"@composer dump-autoload"
-		]
-	},
-	"support": {
-		"forum": "http://forum.codeigniter.com/",
-		"source": "https://github.com/codeigniter4/CodeIgniter4",
-		"slack": "https://codeigniterchat.slack.com"
-	}
+    "name": "simpletine/codeigniter4-hmvc",
+    "description": "CodeIgniter4 HMVC Architecture",
+    "license": "MIT",
+    "type": "project",
+    "homepage": "https://simpletine.com",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "codeigniter4/framework": "^4.0"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.23.1",
+        "mikey179/vfsstream": "^1.6",
+        "phpstan/phpstan": "2.0.x-dev",
+        "phpunit/phpunit": "^9.1"
+    },
+    "autoload": {
+        "exclude-from-classmap": [
+            "**/Database/Migrations/**"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "dev"
 }
